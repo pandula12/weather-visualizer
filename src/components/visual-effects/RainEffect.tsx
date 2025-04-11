@@ -1,6 +1,5 @@
-// src/components/visual-effects/RainEffect.tsx
 import React from 'react';
-import './effects.css'; // Create this CSS file
+import './effects.css';
 
 interface RainEffectProps { intensity?: 'light' | 'moderate' | 'heavy'; }
 

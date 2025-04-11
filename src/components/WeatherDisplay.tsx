@@ -1,4 +1,3 @@
-// src/components/WeatherDisplay.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import WeatherIcon from './WeatherIcon';

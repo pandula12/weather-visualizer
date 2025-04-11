@@ -1,4 +1,3 @@
-// src/lib/mockWeatherData.ts (or adjust path)
 import { WeatherData } from '@/types/weather';
 
 // Helper function to generate timestamps relative to now for sys.sunrise/sunset

@@ -1,5 +1,3 @@
-/* src/components/visual-effects/effects.css */
-
 /* --- Base Container --- */
 .effect-container {
   position: absolute;
@@ -89,7 +87,7 @@
    animation-timing-function: ease-in-out; animation-iteration-count: infinite;
    animation-direction: alternate;
 }
-@keyframes twinkle { /* Slightly slower twinkle */
+@keyframes twinkle {
    from { opacity: 0.4; transform: scale(0.7); }
    to { opacity: 1; transform: scale(1); }
 }

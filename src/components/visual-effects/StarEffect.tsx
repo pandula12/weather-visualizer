@@ -1,6 +1,5 @@
-// src/components/visual-effects/StarEffect.tsx
 import React from 'react';
-import './effects.css'; // Ensure CSS is imported
+import './effects.css';
 
 interface StarEffectProps {
   count?: number;

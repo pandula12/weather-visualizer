@@ -1,6 +1,5 @@
-// src/components/visual-effects/ThunderEffect.tsx
 import React from 'react';
-import './effects.css'; // Make sure this CSS file includes the @keyframes flash
+import './effects.css';
 
 const ThunderEffect: React.FC = () => {
   // Create multiple flash elements with staggered delays for a more natural effect
@@ -17,12 +16,7 @@ const ThunderEffect: React.FC = () => {
           key={i}
           className="lightning-flash"
           style={{
-            // Apply random delays and slightly varied durations per element
             animationDelay: flash.delay,
-            // The base animation duration in CSS can be short (e.g., 0.5s)
-            // controlling the visible part via keyframes.
-            // Or, set the duration directly here (might override CSS if not careful)
-            // animationDuration: flash.duration // Less common to vary duration this way for flashes
           }}
         />
       ))}

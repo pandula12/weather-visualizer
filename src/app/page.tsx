@@ -1,4 +1,3 @@
-// src/app/page.tsx
 'use client';
 
 // React and Hooks Imports
@@ -8,20 +7,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 // Icon Import for Tester Button
 import { FiSliders } from 'react-icons/fi';
 
-// Component Imports (ensure paths are correct in your project)
+// Component Imports
 import LoadingSpinner from '@/components/LoadingSpinner';
 import ErrorMessage from '@/components/ErrorMessage';
 import WeatherDisplay from '@/components/WeatherDisplay';
 
-// Visual Effect Component Imports (ensure these components exist at the paths)
+// Visual Effect Component Imports
 import RainEffect from '@/components/visual-effects/RainEffect';
 import SnowEffect from '@/components/visual-effects/SnowEffect';
 import CloudEffect from '@/components/visual-effects/CloudEffect';
 import StarEffect from '@/components/visual-effects/StarEffect';
 import ThunderEffect from '@/components/visual-effects/ThunderEffect';
-// Sun effect components were removed based on previous feedback
 
-// Type Definitions and Mock Data Imports (ensure paths are correct)
+// Type Definitions and Mock Data Imports
 import { Coordinates, WeatherData } from '@/types/weather';
 import { mockScenarios } from '@/lib/mockWeatherData';
 
@@ -259,8 +257,7 @@ export default function HomePage() {
             timeout: 10000,            // 10 second timeout
             maximumAge: 600000         // Allow cached location up to 10 minutes old
         });
-    // Dependencies ensure function is updated if location state changes (relevant for the internal check)
-    }, [fetchWeatherForCoords, location]); // Removed 'weather' dependency
+    }, [fetchWeatherForCoords, location]);
 
 
     // --- Effect Hook for Initial Component Load ---
@@ -277,8 +274,6 @@ export default function HomePage() {
             setLoadingLocation(false);
             setLoadingWeather(false);
         }
-        // Empty dependency array `[]` means this effect runs only once after the initial render
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 

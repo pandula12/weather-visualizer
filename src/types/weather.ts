@@ -1,4 +1,3 @@
-// src/types/weather.ts
 export interface Coordinates {
     latitude: number;
     longitude: number;
@@ -56,5 +55,3 @@ export interface Coordinates {
     name: string; // City name
     cod: number; // Internal parameter
   }
-  
-  // Add any other interfaces you might need

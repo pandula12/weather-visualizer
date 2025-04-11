@@ -1,4 +1,3 @@
-// src/components/visual-effects/CloudEffect.tsx
 import React from 'react';
 import './effects.css';
 
