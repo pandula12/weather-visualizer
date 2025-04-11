@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import WeatherIcon from './WeatherIcon';
 import { WeatherData } from '@/types/weather';
 import {
-    WiBarometer, WiFog, WiHumidity, WiStrongWind, WiDirectionUp, WiCloud, WiThermometer, WiThermometerExterior
+    WiBarometer, WiFog, WiHumidity, WiStrongWind, WiDirectionUp, WiCloud
 } from 'react-icons/wi';
 
 interface WeatherDisplayProps {
@@ -18,7 +18,11 @@ const itemVariants = { /* ... */ };
 const paramsContainerVariants = { /* ... */ };
 
 // Helper Function
-const degreesToDirection = (degrees: number): string => { /* ... */ };
+const degreesToDirection = (degrees: number): string => {
+    const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+    const index = Math.round(degrees / 45) % 8;
+    return directions[index];
+};
 
 // --- Main Weather Display Component---
 const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ data, isDark }) => {

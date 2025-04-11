@@ -7,10 +7,8 @@ interface SnowEffectProps {
   windSpeed?: number; // To influence horizontal drift
 }
 
-const SnowEffect: React.FC<SnowEffectProps> = ({ intensity = 'moderate', windSpeed = 1 }) => {
+const SnowEffect: React.FC<SnowEffectProps> = ({ intensity = 'moderate'}) => {
   const count = intensity === 'heavy' ? 150 : intensity === 'moderate' ? 80 : 40;
-  // Calculate a base drift factor - adjust multiplier as needed
-  const driftFactor = windSpeed * 10; // e.g., 5 m/s wind -> 50px drift range
 
   return (
     <div className="effect-container">
@@ -21,9 +19,6 @@ const SnowEffect: React.FC<SnowEffectProps> = ({ intensity = 'moderate', windSpe
         const fallDuration = 8 + Math.random() * 7; // Fall duration between 8s and 15s
         const fallDelay = Math.random() * 10; // Start falling at different times
         const opacity = Math.random() * 0.6 + 0.4; // Opacity between 0.4 and 1.0
-
-        // Calculate horizontal drift based on wind - random within a range defined by driftFactor
-        const drift = (Math.random() - 0.5) * driftFactor; // Random drift left or right
 
         return (
           <div

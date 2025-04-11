@@ -193,10 +193,6 @@ export default function HomePage() {
              console.log("Real weather data received:", data);
              setWeather(data as WeatherData); // Update state with fetched weather
              setError(null);
-         } catch (err: any) {
-             console.error("Failed to fetch real weather:", err);
-             setError(err.message || 'Failed to fetch real weather data.');
-             setWeather(null); // Clear weather on error
          } finally {
             setLoadingWeather(false); // Clear loading state
         }

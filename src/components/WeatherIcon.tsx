@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
     WiDaySunny, WiNightClear, WiDayCloudy, WiNightAltCloudy, WiCloud, WiCloudy,
-    WiShowers, WiRain, WiDayRain, WiNightAltRain, WiThunderstorm, WiSnow, WiFog, WiNa
+    WiShowers, WiDayRain, WiNightAltRain, WiThunderstorm, WiSnow, WiFog, WiNa
 } from 'react-icons/wi'; // Import more icons
 
 interface WeatherIconProps {
