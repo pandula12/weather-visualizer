@@ -2,6 +2,9 @@
 
 A dynamic weather application that displays real-time weather data with beautiful visual effects based on current conditions. Built with Next.js, TypeScript, and Tailwind CSS.
 
+## Author
+Pandula Gajadeera
+
 ## Features
 
 - Real-time weather data from OpenWeatherMap API
@@ -17,3 +20,12 @@ A dynamic weather application that displays real-time weather data with beautifu
 - TypeScript
 - Tailwind CSS
 - Framer Motion for animations
+
+## Usage
+
+To run locally, traverse to root directory and execute the following terminal commands
+
+ ```sh
+  npm install
+  npm run dev
+  ```
