@@ -37,7 +37,7 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({ data, isDark }) => {
             <motion.div variants={itemVariants} className="text-center">
                 <h2 className="text-3xl md:text-4xl font-bold">{name}, {sys.country}</h2>
                  <p className="text-sm opacity-80 mt-1">
-                    {new Date(dt * 1000).toLocaleTimeString('en-AU', { weekday: 'long', hour: 'numeric', minute: '2-digit', timeZone: 'Australia/Darwin' })}
+                    {new Date(dt * 1000).toLocaleTimeString('en-AU', { weekday: 'long', hour: 'numeric', minute: '2-digit'})}
                  </p>
             </motion.div>
 
